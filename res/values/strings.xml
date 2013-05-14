@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloAndroidWorld</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="change">Cambia Activity</string>
+    <string name="aw">Hello (Android)World!</string>
+    <string name="toast">Questo è solo un toast di prova!</string>
+    <string name="maketoast">Cliccami!</string>
+    <string name="chiudi">Chiudi</string>
+
+</resources>
