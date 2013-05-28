@@ -10,5 +10,7 @@
     <string name="toast">Questo è solo un toast di prova!</string>
     <string name="maketoast">Cliccami!</string>
     <string name="chiudi">Chiudi</string>
+    <string name="notifica">Notifica</string>
+    <string name="testo_notifica">Ciao! Io sono una notifica di prova parecchio logorroica: non è colpa mia, non avrei voluto dire così tanto ma il mio sviluppatore dice che servo a testare le funzionalità di Android 4.1</string>
 
 </resources>
