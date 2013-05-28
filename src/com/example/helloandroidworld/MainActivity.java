@@ -69,21 +69,23 @@ public class MainActivity extends Activity {
         PendingIntent pending2 = PendingIntent.getActivity(this, 0, intent2, 0);
 
         // Chiamiamo il Notification Builder e settiamo titolo, testo, testo con notifica espansa e gli intent da lanciare
-        Notification noti = new Notification.Builder(this)
+        Notification provaNotifica = new Notification.Builder(this)
                 .setContentTitle("Titolo")
-                .setContentText("Notifica di prova").setSmallIcon(R.drawable.ic_launcher)
+                .setContentText("Notifica di prova")
+                .setSmallIcon(R.drawable.ic_launcher)
                 .setStyle(new Notification.BigTextStyle().bigText(getResources().getString(R.string.testo_notifica)))
                 .setContentIntent(pending1)
                 .addAction(R.drawable.ic_launcher, "Lancia", pending1)
-                .addAction(R.drawable.ic_launcher, "Chiama", pending2).build();
+                .addAction(R.drawable.ic_launcher, "Chiama", pending2)
+                .build();
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
 
         //Cancella la notifica automaticamente quando cliccata
-        noti.flags |= Notification.FLAG_AUTO_CANCEL;
+        provaNotifica.flags |= Notification.FLAG_AUTO_CANCEL;
 
         //Avvia la notifica
-        notificationManager.notify(0, noti);
+        notificationManager.notify(0, provaNotifica);
 
     }
 
